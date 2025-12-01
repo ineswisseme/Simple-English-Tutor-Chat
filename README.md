@@ -35,7 +35,8 @@ How to set up:
 
 3 - Run the container: 
 
- docker run --name tutor   -p port:port   -v ~/workspace:/workspace   tutor-server # Change the exposed port in the DockerFile if you want to use a different port. 
+ docker run --name tutor   -p port:port   -v ~/workspace:/workspace   tutor-server 
+ # Choose the exposed port in the DockerFile. 
 
 4 - Send a WAV audio file to the model via Curl: 
 
