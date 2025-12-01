@@ -1,8 +1,21 @@
 # Simple-English-Tutor-AI-Chat
-This is a simple, open source chat setup for beginner english teacher. This was created to use as few CPU resources possible.
+This is a simple, open source chat setup for beginner english teacher. This was created to use as few CPU resources as possible.
 
 This repository only contains the code needed to run the model itself locally, it does not contain any additional file for front-end.
 I highly recommend running it on WSL:Ubuntu and Docker.
+
+How it works:
+
+This chatbot uses several open source ml models. Here is a breakdown of the main loop:
+
+>> audio.wav input sent via Curl by user.
+>> pydub convert file to mono.
+>> Vosk translate the audio to text.
+>> T5 cleans transcription if needed.
+>> Phi-3 recieves user_text and produce a text answer.
+>> Kokoro creates a voice over of user_text.
+>> Json file containing user_text, reply_text and audio is saved in user's local directory.
+
 
 How to set up:
 
@@ -12,7 +25,7 @@ How to set up:
 
      
 
-1 - Install all required depencencies in a docker following the folder structure. 
+1 - Create all required environment in a docker following the folder structure. The DockerFile will install the requirements.txt when you build the image.
 
 2 - Build the image: 
  docker build -t tutor-server .
