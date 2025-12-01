@@ -27,7 +27,7 @@ How to set up:
 
 
 
-1 - Create all required environment in a docker following the folder structure. The DockerFile will install the requirements.txt when you build the image.
+1 - Create all required environment in a docker following the folder structure. The DockerFile will install the requirements.txt when you build the image, this includes the workspace and models folders.
 
 2 - Build the image: 
  docker build -t tutor-server .
