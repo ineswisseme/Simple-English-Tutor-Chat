@@ -8,13 +8,13 @@ How it works:
 
 This chatbot uses several open source ml models. Here is a breakdown of the main loop:
 
->> audio.wav input sent via Curl by user.
->> pydub convert file to mono.
->> Vosk translate the audio to text.
->> T5 cleans transcription if needed.
->> Phi-3 receives user_text and produce a text answer.
->> Kokoro creates a voice over of user_text.
->> Json file containing user_text, reply_text and audio is saved in user's local directory.
+1. audio.wav input sent via Curl by user.
+2. pydub convert file to mono.
+3. Vosk translate the audio to text.
+4. T5 cleans transcription if needed.
+5. Phi-3 receives user_text and produce a text answer.
+6. Kokoro creates a voice over of user_text.
+7. Json file containing user_text, reply_text and audio is saved in user's local directory.
 
 
 How to set up:
