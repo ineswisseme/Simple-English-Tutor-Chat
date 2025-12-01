@@ -200,9 +200,23 @@ async def chat_file(audio: UploadFile = File(...)):
     except Exception:
         raise HTTPException(status_code=500, detail="TTS failed.")
 
+    # save the json to local folder here
+    timestamp_str = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    json_path = Path("audio_test")
+    json_path.mkdir(exist_ok=True)
+    json_file = json_path / f"conversation_{timestamp_str}.json"
+
+    with open(json_file, "w", encoding="utf-8") as f:
+        json.dump({
+            "timestamp": timestamp_str,
+            "user_text": user_text,
+            "reply_text": reply,
+            "audio_base64": audio_b64
+        }, f, ensure_ascii=False, indent=2)
 
     return JSONResponse({
         "user_text": user_text,
         "reply_text": reply,
         "audio": audio_b64
+    })4
     })
