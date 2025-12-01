@@ -12,7 +12,7 @@ This chatbot uses several open source ml models. Here is a breakdown of the main
 >> pydub convert file to mono.
 >> Vosk translate the audio to text.
 >> T5 cleans transcription if needed.
->> Phi-3 recieves user_text and produce a text answer.
+>> Phi-3 receives user_text and produce a text answer.
 >> Kokoro creates a voice over of user_text.
 >> Json file containing user_text, reply_text and audio is saved in user's local directory.
 
