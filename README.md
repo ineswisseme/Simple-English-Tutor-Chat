@@ -20,13 +20,13 @@ This chatbot uses several open source ml models. Here is a breakdown of the main
 7. Json file containing user_text, reply_text and audio is saved in user's local directory.
 
 
+
 How to set up:
 
-<img width="309" height="232" alt="folder" src="https://github.com/user-attachments/assets/27d38a90-562b-48a8-b414-c28bd6712442" />
+<img width="316" height="234" alt="folder" src="https://github.com/user-attachments/assets/c410bee3-9b51-4705-a6f5-564ff2c033f0" />
 
 
 
-     
 
 1 - Create all required environment in a docker following the folder structure. The DockerFile will install the requirements.txt when you build the image.
 
