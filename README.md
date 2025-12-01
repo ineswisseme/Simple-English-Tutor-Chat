@@ -23,8 +23,7 @@ This chatbot uses several open source ml models. Here is a breakdown of the main
 
 How to set up:
 
-<img width="316" height="234" alt="folder" src="https://github.com/user-attachments/assets/c410bee3-9b51-4705-a6f5-564ff2c033f0" />
-
+<img width="319" height="255" alt="folder" src="https://github.com/user-attachments/assets/d11d4eb2-c412-4252-a08d-5d2a780275a6" />
 
 
 
