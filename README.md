@@ -5,7 +5,7 @@
 This is a simple, open source chat setup for beginner english teacher. This was created to use as few CPU resources as possible.
 
 This repository only contains the code needed to run the model itself locally, it does not contain any additional file for front-end.
-I highly recommend running it on WSL:Ubuntu and Docker.
+I highly recommend running it on WSL:Ubuntu. You will need Docker.
 
 How it works:
 
