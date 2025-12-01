@@ -30,13 +30,15 @@ How to set up:
 1 - Create all required environment in a docker following the folder structure. The DockerFile will install the requirements.txt when you build the image, this includes the workspace and models folders.
 
 2 - Build the image: 
+
  docker build -t tutor-server .
 
 3 - Run the container: 
- docker run --name tutor   -p 8000:8000   -v ~/workspace:/workspace   tutor-server # Change the exposed port in the DockerFile if you want to use a different port. 
+
+ docker run --name tutor   -p port:port   -v ~/workspace:/workspace   tutor-server # Change the exposed port in the DockerFile if you want to use a different port. 
 
 4 - Send a WAV audio file to the model via Curl: 
 
-curl -X POST   -F "audio=@ ~/audio_test/output_mono_argentina.wav"   http://localhost:8000/chat-file
+curl -X POST   -F "audio=@ ~/audio_test/output_mono_argentina.wav"   http://localhost:*your port*/chat-file
 
 Thank you!
