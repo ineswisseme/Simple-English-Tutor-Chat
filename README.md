@@ -6,16 +6,9 @@ I highly recommend running it on WSL:Ubuntu and Docker.
 
 How to set up:
 
-project/
-│── server.py
-│── requirements.txt
-│── Dockerfile
-└── audio_test/
-     └── audio_test_mono.wav
-└── models/
-     ├── Phi-3-mini-4k-instruct-q4.gguf
-     ├── vosk-model-small-en-us-0.15/
-     └── flan-t5-small/
+<img width="309" height="232" alt="folder" src="https://github.com/user-attachments/assets/27d38a90-562b-48a8-b414-c28bd6712442" />
+
+
 
      
 
