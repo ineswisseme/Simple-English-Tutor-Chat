@@ -33,11 +33,10 @@ How to set up:
  docker build -t tutor-server .
 
 3 - Run the container: 
- docker run -p 8000:8000 tutor-server # Change the exposed port in the DockerFile if you want to use a different port.
+ docker run --name tutor   -p 8000:8000   -v ~/workspace:/workspace   tutor-server # Change the exposed port in the DockerFile if you want to use a different port. 
 
 4 - Send a WAV audio file to the model via Curl: 
-curl -X POST \
-     -F "audio=@myvoice.wav" \  # Get direct path if it doesn't find the file
-     http://localhost:8000/chat-file
+
+curl -X POST   -F "audio=@ ~/audio_test/output_mono_argentina.wav"   http://localhost:8000/chat-file
 
 Thank you!
