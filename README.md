@@ -1,4 +1,7 @@
 # Simple-English-Tutor-AI-Chat
+
+
+
 This is a simple, open source chat setup for beginner english teacher. This was created to use as few CPU resources as possible.
 
 This repository only contains the code needed to run the model itself locally, it does not contain any additional file for front-end.
