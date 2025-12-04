@@ -39,6 +39,6 @@ How to set up:
 
 4 - Send a WAV audio file to the model via Curl: 
 
-curl -X POST   -F "audio=@ ~/audio_test/output_mono_argentina.wav"   http://localhost:*your port*/chat-file
+curl -X POST   -F "audio=@ ~/audio_test/*your_audio_file*.wav"   http://localhost:*your port*/chat-file
 
 Thank you!
